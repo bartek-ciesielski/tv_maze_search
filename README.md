@@ -4,7 +4,7 @@ This is a SPA build with React and Redux.
 
 ## Features
 
-Application uses TVmaze API to search shows. After sendig a query it returns matching shows which can be expanded in modal with addintional informations about the show.
+Application uses TVmaze API to search shows. After sendig a query it returns matching shows which can be expanded in modal with additional informations about the show.
 
 ## Creator
 
