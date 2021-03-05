@@ -1,6 +1,6 @@
 # REDUX TVMAZE SEARCH
 
-This is a SPA build with React and Redux using Hooks.
+This is a responsive SPA build with React and Redux using Hooks.
 
 [Live version](https://bartek-ciesielski.github.io/tv_maze_search/) deployed on gh pages.
 
@@ -11,10 +11,11 @@ After sendig a query it returns matching shows which can be expanded in modal wi
 
 ## Setup
 
-- This project is bootstrapped with Create React App.
+- This project is bootstrapped with Create React App
 - For API calls it uses Axios
 - Hooks are used in redux
 - For styling it uses css.modules
+- RWD with CSS grid and flexbox
 
 ## Structure
 
