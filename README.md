@@ -18,9 +18,9 @@ After sendig a query it returns matching shows which can be expanded in modal wi
 
 ## Structure
 
-- commponents - dumb commponents
+- components - dumb components
 - modules - conatiners connected to redux
-- pages - view commponents
+- pages - view components
 - services - api calls
 
 ## Creator
