@@ -75,7 +75,7 @@
 }
 
 .modalList {
-  text-align: left;
+  text-align: center;
   margin-bottom: 1rem;
   list-style: none;
   max-width: 400px;
@@ -100,5 +100,17 @@
   .modalPhoto {
     height: 80vh;
     max-width: 80vw;
+  }
+}
+
+@media (max-width: 770px) {
+  .modalList {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .modalList {
+    padding: 0;
   }
 }
