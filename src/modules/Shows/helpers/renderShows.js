@@ -1,6 +1,7 @@
 import ShowCard from '../../../components/ShowCard/showCard';
 import * as showCard from './renderShowCard';
 import styles from '../shows.module.css';
+import noImage from '../../../img/noImage.png';
 
 export const renderShows = (
   noResults,
@@ -25,7 +26,7 @@ export const renderShows = (
             <ShowCard
               show={show}
               alt={`Movie poster of: ${show.name}`}
-              image={show.image ? show.image.medium : '/images/noImage.png'}
+              image={show.image ? show.image.medium : noImage}
             >
               {showCard.premiereDate(show)}
               {showCard.rating(show)}

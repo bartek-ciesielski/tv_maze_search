@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-const url = 'http://api.tvmaze.com/shows';
-const urlSearch = ' http://api.tvmaze.com/search/shows?q=';
-const urlShow = 'http://api.tvmaze.com/shows/';
+const url = 'https://api.tvmaze.com/shows';
+const urlSearch = ' https://api.tvmaze.com/search/shows?q=';
 
 export const requestAllShows = () =>
   axios.get(`${url}`).then((resp) => {
@@ -15,6 +14,6 @@ export const requestSearchResults = (query) =>
   });
 
 export const requestModalShow = (showId) =>
-  axios.get(`${urlShow}${showId}?embed[]=cast&embed[]=crew`).then((resp) => {
+  axios.get(`${url}/${showId}?embed[]=cast&embed[]=crew`).then((resp) => {
     return resp.data;
   });
