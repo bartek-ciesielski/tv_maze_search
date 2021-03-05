@@ -63,8 +63,8 @@
   cursor: pointer;
   border: 0;
   position: absolute;
-  top: 0.6rem;
-  right: 0.6rem;
+  top: 1.5rem;
+  right: 1rem;
 }
 
 .modalListContainer {
@@ -111,6 +111,6 @@
 
 @media (max-width: 600px) {
   .modalList {
-    padding: 0;
+    padding: 0 0.2rem;
   }
 }
