@@ -3,6 +3,7 @@
 }
 
 .photo {
+  width: 100%;
   margin-bottom: 0.2rem;
 }
 
@@ -10,10 +11,6 @@
   display: flex;
   flex-direction: column;
 }
-/* .cardContent:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
-} */
 
 .cardFooter {
   display: flex;
