@@ -1,0 +1,33 @@
+.showCard {
+  animation: show 0.5s forwards ease-in-out;
+}
+
+.photo {
+  margin-bottom: 0.2rem;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+/* .cardContent:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+} */
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,104 @@
+.overlay {
+  position: fixed;
+  display: block;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.content {
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 0.25rem;
+  max-width: 85vw;
+  height: fit-content;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modalPhoto {
+  margin: 0 1% 10% 1%;
+  display: flex;
+}
+.modalHeader,
+.modalFooter {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.modalFooter {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.modalHeader a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.modalHeader a:hover {
+  color: rgb(140, 139, 139);
+}
+
+.modalContent {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.closeIcon {
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+}
+
+.modalListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.modalList {
+  text-align: left;
+  margin-bottom: 1rem;
+  list-style: none;
+  max-width: 400px;
+  width: fit-content;
+  padding: 0 2rem;
+  line-height: 1.6;
+}
+
+.modalList h4 {
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (orientation: portrait) {
+  .modalPhoto {
+    max-height: 80vh;
+    max-width: 90vw;
+  }
+}
+
+@media (orientation: landscape) {
+  .modalPhoto {
+    height: 80vh;
+    max-width: 80vw;
+  }
+}
