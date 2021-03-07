@@ -14,12 +14,16 @@ function ShowsList() {
     dispatch(actions.fetchShows());
   }, []);
 
-  const isLoading = useSelector((state) => state.shows.isLoading);
-  const isError = useSelector((state) => state.shows.isError);
-  const modalShow = useSelector((state) => state.shows.modalShow);
-  const searchResults = useSelector((state) => state.shows.searchResults);
-  const shows = useSelector((state) => state.shows.shows);
-  const noResults = useSelector((state) => state.shows.noResults);
+  const showsState = useSelector((state) => state.shows);
+
+  const {
+    isLoading,
+    isError,
+    modalShow,
+    searchResults,
+    shows,
+    noResults,
+  } = showsState;
 
   const dispatch = useDispatch();
 
